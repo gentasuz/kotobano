@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>sample</title>
+        <link rel="stylesheet" href="style4.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans JP">
+        <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel= "stylesheet">
+    </head>
+    <body>
+        <div class="fullPageScroll">
+            <section id="section1" class="section section1">
+                <h1>ことばのまとい（写真挿入）</h1>
+            </section>
+            <section id="section2" class="section section2">
+                <h1>見失いがちなあなただけのことばを手元に。</h1>
+                <p>あなたが大切に想うことばや記憶は、日常の喧騒と共に薄れていくもの。
+                    過ぎ去る日々の中、多くの言葉に触れ続けているあなたを救ってくれた、慈しんでくれたことば。
+                    あなただけの想いと記憶がこもったことばをいま、その手に。
+                </p>
+            </section>
+            <section id="section3" class="section section3">
+                <h1>作品でのやくそく</h1>
+                <p>本作品では、あなたのことを深く知るために対話を通して様々な質問を問いかけます。
+                    回答された内容は、記録・保存・分析などは一切されませんし、作品を体験している風景も誰からもみられていません。</p>
+                <p>- あなただけが持っている記憶と感情に素直に向き合うこと
+                    - 等身大のあなたらしいことばで回答すること
+                    
+                    この２つを大切にぜひ本作品を体験してください。
+                    
+                    あなただけの想いと記憶が根ざしたことばにきっと出会えるはずです。</p>
+            </section>
+            <section id="section4" class="section section4">
+                <div id= "chatbot">
+                    <div id= "chatbot-header">
+                    <div id= "chatbot-logo">チャット</div>
+                    <i id= "chatbot-zoom-icon" class="material-icons waves-effect waves-light" onclick= "chatbotZoom()">fullscreen</i>
+                    </div>
+                    
+                    <div id= "chatbot-body">
+                    <ul id= "chatbot-ul"></ul>
+                    </div>
+                    
+                    <!--入力場所，送信ボタン-->
+                    <form onsubmit= "return false">
+                    <div id= "chatbot-footer">
+                        <input type= "text" id= "chatbot-text" class= "browser-default" placeholder= "テキストを入力">
+                        <input type= "submit" value= "送信" id= "chatbot-submit">
+                    </div>
+                    </form>
+                    
+                </div>
+            </section>
+            <section id="section5" class="section section5">
+                <textarea id="request_text" cols="100" rows="10">
+                </textarea>
+                <br />
+                <input type="button" onClick="reply()" value="話しかける" />
+                <br /><br />
+                <textarea id="response_text" cols="100" rows="10" disabled>
+                </textarea>
+                <div class="botui-app-container" id="chat-app">
+            </section>
+            <section id="section6" class="section section6">
+                <p>ご体験ありがとうございました。</p>
+            </section>
+          </div>
+          <nav id="pagination" class="pagination">
+            <a id="pagination1" href="#section1"></a>
+            <a id="pagination2" href="#section2"></a>
+            <a id="pagination3" href="#section3"></a>
+            <a id="pagination4" href="#section4"></a>
+            <a id="pagination5" href="#section5"></a>
+            <a id="pagination6" href="#section6"></a>
+            
+          </nav>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="test4.js"></script>
+    </body>
+</html>
