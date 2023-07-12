@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 //印刷
 document.querySelector('#print').addEventListener('click', () => {
     window.print();
