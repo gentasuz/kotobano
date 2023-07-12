@@ -1,3 +1,8 @@
+//印刷
+document.querySelector('#print').addEventListener('click', () => {
+    window.print();
+  });
+
 // スクロール関係
 
 // スムーススクロール
@@ -51,7 +56,7 @@ function activatePagination(element) {
 
 
 // chatGPTコード
-const API_KEY = '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';
+const API_KEY = process.env.API_KEY;
 const URL = "https://api.openai.com/v1/chat/completions";
 
 //あとで消す

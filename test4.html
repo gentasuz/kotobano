@@ -51,14 +51,19 @@
                 </div>
             </section>
             <section id="section5" class="section section5">
-                <textarea id="request_text" cols="100" rows="10">
-                </textarea>
-                <br />
-                <input type="button" onClick="reply()" value="話しかける" />
-                <br /><br />
-                <textarea id="response_text" cols="100" rows="10" disabled>
-                </textarea>
-                <div class="botui-app-container" id="chat-app">
+                <br>
+                <div class="noPrint">
+                    ここは、画面表示されますが印刷されません
+                </div>
+                
+                <div class="noScreen">
+                    ここは、画面表示されませんが印刷されます
+                </div>
+                
+                <div class="noScreenPrint">
+                    ここは、画面表示も印刷もされません
+                </div>
+                <button id="print" class="no-print">このページを印刷する</button>
             </section>
             <section id="section6" class="section section6">
                 <p>ご体験ありがとうございました。</p>
